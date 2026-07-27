@@ -59,7 +59,7 @@ sauce-demo/
 **Requirements:** Node.js 18+, npm
 
 ```bash
-cd playwright-ui-template
+cd sauce-demo
 npm install
 npx playwright install chromium
 ```
@@ -71,6 +71,7 @@ npx playwright install chromium
 | `npm run test:headed` | UI tests with browser visible |
 | `npx cucumber-js --tags "@api"` | API tests only |
 | `npx cucumber-js --tags "not @api"` | UI tests only |
+| `npx run report` | Show Cucumber Report |
 
 Env files live in `environments/` (`qa` / `stg`).  
 Reports: `reports/cucumber-report.html`
