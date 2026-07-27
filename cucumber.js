@@ -3,7 +3,8 @@ module.exports = {
     requireModule: [],
     require: [
       'support/**/*.js',
-      'ui/steps/**/*.js'
+      'ui/steps/**/*.js',
+      'api/steps/**/*.js'
     ],
     paths: ['features/**/*.feature'],
     format: [

@@ -22,8 +22,11 @@ function loadEnvironment() {
   return {
     name: envName,
     baseURL: process.env.BASE_URL,
-    username: process.env.USER_NAME,
+    username: process.env.USERNAME,
     password: process.env.PASSWORD,
+    apiBaseURL: process.env.API_BASE_URL || 'https://restful-booker.herokuapp.com',
+    apiUsername: process.env.API_USERNAME || 'admin',
+    apiPassword: process.env.API_PASSWORD || 'password123',
   };
 }
 
