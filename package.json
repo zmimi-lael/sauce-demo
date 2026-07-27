@@ -1,0 +1,29 @@
+{
+  "name": "sauce-demo",
+  "version": "1.0.0",
+  "description": "Base Playwright JS + Cucumber.js (SpecFlow-style) UI automation template with Page Objects and multi-environment support",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:qa": "cross-env ENV=qa cucumber-js",
+    "test:stg": "cross-env ENV=stg cucumber-js",
+    "test:headed": "cross-env HEADED=true cucumber-js",
+    "test:debug": "cross-env HEADED=true DEBUG=true cucumber-js",
+    "report": "open reports/cucumber-report.html"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "page-object",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@faker-js/faker": "^9.0.0",
+    "@playwright/test": "^1.48.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5"
+  }
+}
