@@ -16,7 +16,7 @@ module.exports = {
     },
     parallel: 1,          // increase when ready for parallel runs
     retry: 0,
-    publishQuiet: true,
+    publishQuiet: false,
     worldParameters: {}
   }
 };
